@@ -66,7 +66,7 @@ window.addEventListener("load", cameraStart, false);
           // again, use vendor-prefixed transform property
           grid.style.transform = 
               "rotate(" + ( 90-calcAngle(event.accelerationIncludingGravity.x,event.accelerationIncludingGravity.y) ) + "deg) ";
-          axOut = ax-calcAngle(event.accelerationIncludingGravity.x,event.accelerationIncludingGravity.y)
+          axOut = 90+ax-calcAngle(event.accelerationIncludingGravity.x,event.accelerationIncludingGravity.y)
           axis.style.transform = 
               "rotate(" + ( axOut ) + "deg) ";
         });
